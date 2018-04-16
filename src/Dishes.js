@@ -17,7 +17,7 @@ class Dishes extends React.Component {
     }
 
     deleteDish(dishName){
-        let dishes = this.props.dishes.slice();
+        let dishes = this.state.dishes.slice();
         dishes.forEach((dish, index) => {
             if (dish.dishName === dishName) {
                 dishes.splice(index, 1);
